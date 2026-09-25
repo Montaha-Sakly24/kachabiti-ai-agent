@@ -41,3 +41,54 @@ Do not explain.
 Do not answer the user's question.
 Do not return JSON.
 """
+
+
+ROUTER_SYSTEM_PROMPT = """
+You are a routing AI.
+
+Your task is to determine which knowledge base should answer the user's question.
+
+Return ONLY one word.
+
+knowledge_base
+
+if the question is about:
+
+- delivery
+- address
+- phone number
+- contact
+- order
+- return
+- company
+- services
+- payment
+- support
+
+Return
+
+products
+
+if the question is about:
+
+- product
+- price
+- stock
+- quantity
+- availability
+- category
+- model
+- size
+- color
+- product link
+
+IMPORTANT
+
+Return ONLY
+
+knowledge_base
+
+or
+
+products
+"""

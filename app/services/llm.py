@@ -1,8 +1,9 @@
-from langchain_nvidia_ai_endpoints import ChatNVIDIA
-from app.core.config import NVIDIA_API_KEY, MODEL_NAME
+from langchain_openai  import ChatOpenAI
+from app.core.config import OPENAI_API_KEY, MODEL_NAME
 
-llm = ChatNVIDIA(
+llm = ChatOpenAI(
     model=MODEL_NAME,
-    api_key=NVIDIA_API_KEY,
+    api_key=OPENAI_API_KEY,
     temperature=0.2,
+    max_tokens=2000,
 )

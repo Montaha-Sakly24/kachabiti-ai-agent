@@ -1,3 +1,30 @@
-venv/
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Python
 __pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Node.js
+node_modules/
+.next/
+out/
+coverage/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Build and tooling
+dist/
+build/
+.vercel/
+*.tsbuildinfo
+
+# Local backup files
+*.bundle

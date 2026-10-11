@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --color-sand: #f7f0e6;
+  --color-sand-deep: #efe4d2;
+  --color-woven: #e8dcc8;
+  --color-woven-line: #d9c9ac;
+  --color-coffee: #3a2e26;
+  --color-coffee-soft: #6b5c4f;
+  --color-terracotta: #a8522a;
+  --color-terracotta-deep: #8c4321;
+  --color-olive: #7a8b6f;
+  --color-olive-deep: #5f6e55;
+  --color-brick: #b23b30;
+}
+
+@theme inline {
+  --color-sand: var(--color-sand);
+  --color-sand-deep: var(--color-sand-deep);
+  --color-woven: var(--color-woven);
+  --color-woven-line: var(--color-woven-line);
+  --color-coffee: var(--color-coffee);
+  --color-coffee-soft: var(--color-coffee-soft);
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-deep: var(--color-terracotta-deep);
+  --color-olive: var(--color-olive);
+  --color-olive-deep: var(--color-olive-deep);
+  --color-brick: var(--color-brick);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-sand);
+  color: var(--color-coffee);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* subtle woven paper texture on the base background */
+.bg-woven-texture {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(58, 46, 38, 0.025) 0px, rgba(58, 46, 38, 0.025) 1px, transparent 1px, transparent 10px),
+    repeating-linear-gradient(-45deg, rgba(58, 46, 38, 0.025) 0px, rgba(58, 46, 38, 0.025) 1px, transparent 1px, transparent 10px);
+}

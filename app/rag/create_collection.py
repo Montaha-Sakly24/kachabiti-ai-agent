@@ -25,4 +25,4 @@ def create_collection(collection_name: str):
     
 
 if __name__ == "__main__":
-    create_collection("knowledge_base")
+    create_collection("products")

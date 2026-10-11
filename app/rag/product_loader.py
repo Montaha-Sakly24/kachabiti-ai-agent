@@ -21,6 +21,7 @@ Lien : {row['Lien produit']}
                     metadata={
                         "name": row['Nom du produit'],
                         "category": row['Categorie'],
+                        "price": row["Prix (TND)"],
                         "status": row["Statut"],
                         "stock": row["Quantite en stock"],
                         "link": row["Lien produit"],

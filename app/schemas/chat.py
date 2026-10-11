@@ -11,6 +11,7 @@ class ChatResponse(BaseModel):
 
 
 class Intent(str, Enum):
+    SOCIAL = "SOCIAL"
     BUSINESS = "BUSINESS"
     NON_BUSINESS = "NON_BUSINESS"
 
